@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 absolute</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+        }
+        .green-box {
+            background-color: green;
+            position: absolute; /* absolute - 부모 요소를 기준으로 위치를 잡는다 */
+            left: 100px; /* left - 왼쪽으로부터 오른쪽으로 100px 이동 */
+            top: 0px;
+        }
+        .blue-box {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+    <h4>포지션 absolute</h4>
+    <p>
+        1. 포지션 absolute는 부모 요소를 기준으로 위치를 잡는다.
+        2. 부모 요소 중에 포지션 relative, absolute, fixed가 있는 경우
+            그 부모 요소를 기준으로 위치를 잡는다.
+            이 때 기준이 되는 위치는 가장 가까운 부모 요소이다.
+        3. absolute를 사용해서 요소의 위치를 지정하기 위해서는 일반적으로
+            부모 요소 중에 포지션 relative 조건을 부여하고 그 안에 자식 요소에 
+            absolute조건을 부여한다.
+        4. absolute 요소는 문서의 흐름에서 벗어나서 좌표의 위치를 잡기 때문에
+            그 다음에 오는 요소는 해당 요소를 인식하지 못해서 겹쳐진다.
+    </p>
+</body>
+</html>

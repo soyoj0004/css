@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            /*body 요소의 자식 요소들을 가로로 배치*/
+            flex-direction: column;
+            /*자식 요소들을 세로로 배치*/
+            align-items: center;
+            /*자식 요소들을 수직 가운데 정렬*/
+            justify-content: center;
+            /*자식 요소들을 수평 가운데 정렬*/
+            height: 100vh;
+            /*body요소의 높이를 디바이스 화면의 높이와 같게 설정*/
+            margin: 0;
+            /*body 요소의 바깥 여백을 없앰, 내용이 브라우저에 붙음*/
+            background-color: #f0f0f0;
+            /*body 요소의 배경색을 연한 회색으로 설정*/
+        }
+
+        h2 {
+            color: rgb(42, 66, 42);
+            margin: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            /*미디어 컨테이너의 너비를 500px로 설정*/
+            margin-bottom: 20px;
+            /*미디어 컨테이너의 아래 여백을 20px로 설정*/
+            align-items: center;
+        }
+
+        audio {
+            width: 500px; /*오디오 요소의 너비를 500px로 설정*/
+           
+        }
+        video{
+            width: 500px; /*비디오 요소의 너비를 500px로 설정*/
+            height: auto; /*비디오 요소의 높이를 자동으로 설정*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Audio Video 재생</h1>
+
+    <div class="media-container">
+        <h2>오디오 파일 재생</h2>
+        <audio controls>
+            <source src="./audio/audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="media-container">
+        <h2>비디오 파일 재생</h2>
+        <video controls>
+            <source src="./video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+
+</html>

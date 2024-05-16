@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition timing-function</title>
+    <style>
+        .container{
+            padding: 10px;
+            color: white;
+            border: 1px solid black;
+        }
+        .bar{
+            width: 100px;
+            background-color: red;
+            transition-property: width; /*width 속성에만 트랜지션을 적용*/
+            transition-duration: 2s; /*2초 동안 트랜지션 효과를 유지*/
+            margin: 10px; /*margin 속성 10px, 각각의 bar 사이의 간격을 준다.*/
+        }
+        /*container에 마우스를 올리면 요소의 너비가 300px로 증가*/
+       .container:hover .bar{
+            width: 300px;
+        }
+        /*transition-timing-function 속성을 적용하여 트랜지션의 속도를 조절*/
+        .bar:nth-child(1){ /*nth-child(1) - 선택자의 n번째 자식 요소를 선택*/
+            transition-timing-function:linear;
+        }
+        .bar:nth-child(2){
+            transition-timing-function:ease;
+        }
+        .bar:nth-child(3){
+            transition-timing-function:ease-in
+        }
+        .bar:nth-child(4){
+            transition-timing-function:ease-out;
+        }
+        .bar:nth-child(5){
+            transition-timing-function:ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Transition timing-function</h2>
+        <div class="bar">linear</div>
+        <div class="bar">ease</div>
+        <div class="bar">ease-in</div>
+        <div class="bar">ease-out</div>
+        <div class="bar">ease-in-out</div>
+    </div>
+</body>
+
+</html>

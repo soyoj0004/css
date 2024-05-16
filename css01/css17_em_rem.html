@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            font-size:16px ;
+        
+        }
+        .child{
+            font-size: 1.5em;  /*16px * 1.5em = 24px*/
+        }
+        .grandchild{
+            font-size: 1.5em; /*24px * 1.5rem = 36px */
+        }
+        .lastChild{ /*최상단에 있는 16px 기준으로 */
+            font-size: 1.0rem; /*16px * 1.0rem = 16px*/
+        }
+    </style>
+</head>
+<body>
+    <div class = "parent">
+        부모요소 - 폰트 사이즈 16px
+        <div class = "child">
+            자식 요소 - 폰트 사이즈 1.5em
+            <div class="grandchild">
+                자식의 자식 요소 - 폰트 사이즈 1.5em
+                <div class="lastChild">
+                    자식의 자식의 마지막 자식 요소 - 폰트 사이즈 1.0rem
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

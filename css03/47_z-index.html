@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index 요소간 우선순위 조절 </title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red-box {
+            background-color: red;
+            position: relative;
+            z-index: 10;
+        }
+
+        .green-box {
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 11;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>z-index의 요소들간 겹침시 우선순서</h2>
+    <p>
+        1. z-index는 요소들간의 우선순위를 조절할 수 있다.
+        2. z-index가 노은 요소가 z-index가 낮은 요소보다 위에 위치한다.
+        3. z-index는 position 속성이 static이 아닌 요소에만 적용된다.
+        4. body의 요쇼들은 선언된 순서에 따라서 자동을 z-index가 부여된다.
+        늦게 선언된 요소일수록 z-index가 높다.
+    </p>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*글꼴 지정*/
+            line-height: 1.6; /*줄 간격 지정*/
+            margin: 20px; /* 바깥 여백 지저(내용과 웹브라우저 사이 공간) */
+        }
+        h1 {
+            color: blue;
+        }
+        h2{
+            color: brown;
+
+        }
+        .text-style {
+            text-align: justify; /*텍스트 정렬 지정*/
+        }
+        .text-litalic {
+            color: blue; /*글자색 지정*/
+            font-style: italic; /*글꼴 스타일 지정*/
+            font-weight: 900; /*글꼴 두께 지정*/
+        }
+        .text-align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>폰트와 텍스트 스타일에 관하여</h1>
+    <section class="text-style">
+        <h2>폰트(Font)</h2>
+        <p>폰트는 글꼴의 디자인을 의미한다. 이는 텍스트의 "얼굴"을 결정하며,
+            서로 다른 폰트는 문서의 분위기와 가독성에 큰 영향을 미친다.
+            폰트와 관련된 속성에는 font-family(글꼴 종류), font-size(글꼴 크기),
+            font-weight(글꼴 두께), font-style(글꼴 스타일, 예: 이탤릭) 등이 있다.
+        </p>
+        <p class ="text-litalic">
+            예시: Arial, sans-serif
+        </p>
+    </section>
+
+    <section class="text-style">
+        <h2>텍스트 스타일(Text Style)</h2>
+        <p> 텍스트 스타일과 관련된 속성에는 color(글자색), text-align(텍스트 정렬),
+            line-height(줄 간격), text-decoration(텍스트 장식, 예: 밑줄) 등이 있다.
+            예를 들어, color: red; text-align: center;는 텍스트를 빨간색으로 표시하고
+            가운데 정렬하도록 지정한다.
+
+            즉, 폰트는 글꼴과 그 스타일(두께, 기울기)을 지정하는 데 중점을 두는 반면,
+            텍스트 스타일은 텍스트의 컬러, 정렬, 간격과 같이 텍스트의 시각적 표현을
+            더 넓은 범위에서 조절한다. 두 용어 모두 웹 페이지에서 텍스트의 시각적인
+            부분을 구성하는 중요한 요소이다.
+        </p>
+
+        <p>색상 예시: 빨간색</p>
+    </section>
+
+    정렬 예시: 가운데 정렬
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative 하위의 absolute 요소</title>
+    <style>
+        /* div 들의 부모 */
+        #wrap {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+        }
+        .box {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        #crd1 {
+            top: 0px;
+            left: 0px;
+        }
+
+        #crd2 {
+            top: 0px;
+            right: 0px;
+        }
+
+        #crd3 {
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #crd4 {
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #crd5 {
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box" id="crd1"></div>
+        <div class="box" id="crd2"></div>
+        <div class="box" id="crd3"></div>
+        <div class="box" id="crd4"></div>
+        <div class="box" id="crd5"></div>
+    </div>
+</body>
+
+</html>

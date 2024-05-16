@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹브라우저별 애니메이션 키프레임</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 표준 속성 */
+            animation-name: change-bg;
+            animation-duration: 5s;
+
+            /* Webkit 기반 브라우저(크롬, 사파리, 마이크로소프트 엣지) */
+            -webkit-animation-name: change-bg;
+            -webkit-animation-duration: 5s;
+
+            /* 모질라 기반 브라우저(파이어폭스) */
+            -moz-animation-name: change-bg;
+            -moz-animation-durationl: 5s;
+
+            /* 마이크로소프트 기반 브라우저(익프를로러) */
+            -ms-animation-name: change-bg;
+            -ms-animation-duration: 5s;
+
+            /* 오페라 기반 브라우저(오페라) */
+            -o-animation-name: change-bg;
+            -o-animation-duration: 5s;
+        }
+
+        /* end of div*/
+        /* 애니메이션 효과를 주기 위한 키프레임 정의 */
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+
+            to {
+                background-color: green;
+                border: 1px solid black;
+            }
+        }
+
+        /* Webkit 기반 브라우저(크롬, 사파리, 마이크로소프트 엣지) */
+        @-webkit-keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+
+            to {
+                background-color: green;
+                border: 1px solid black;
+            }
+        }
+        /* 모질라 기반 */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

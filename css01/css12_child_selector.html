@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 선택자</title>
+    <style>
+        .parent > div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>첫번째 자식 div</div>
+        <div>
+            두번째 자식 div
+            <div> 두번째 자식의 자식(자손)
+                <div>세번째 자식의 자식(자손)</div>
+            </div>
+        </div>
+        <p>자식 선택자로 선택되지 않은 p태그</p>
+    </div>
+</body>
+</html>

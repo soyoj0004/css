@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우선순위</title>
+    <style>
+        .title{ /*클래스 선택자*/
+            color: red;
+        }
+        h1{ /*태그 선택자*/
+            color: blue;
+        }
+
+        p{
+            color: brown !important; /*우선순위 1위*/
+        }
+
+        main #sub .title{ /*아이디 속성이 main이고 아이디 속성이 sub인 요소 중에서 클래스 속성이 title인 요소 */
+            color:yellow; /*우선순위 3위*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title"> 우선순위 </h1>
+</body>
+    <pre>[우선순위]
+        1. !important
+        2. 인라인 스타일
+        3. 아이디 선택자
+        4. 클래스/속성/가상 선택자
+        5. 태그 선택자
+        6. 전체 선택자
+
+        [위치에 따른 우선순위]
+        1. head 섹션 안의 내부 스타일 시트
+        2. style 요소 안의 @import문 
+        3. link 요소로 연결된 CSS 파일
+        4. 브라우저 기본 스타일 시트
+    </pre>
+
+    <h1 class="title">우선 순위</h1>
+    
+    <div id = "main">
+        <div id ="sub">
+            <p class="title" style="background-color: green;"> important</p>
+        </div>
+    </div>
+</html>

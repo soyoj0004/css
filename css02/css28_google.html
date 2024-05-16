@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        /*body 태그에 적용 - 공통 속성*/
+        body{
+            display: flex; /* display: flex 는 요소들이 가로로 정렬 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center;     /* 세로 중앙 정렬 */
+            height: 100vh;           /* 화면 전체 높이 */
+            margin: 0;               /* body 마진 제거 */
+        }
+        .login-form{
+            border: 1px solid gray; /* 테두리 */
+            width: 300px;             /* 폼 너비 */
+            align-items: center;
+        }
+        .login-item{
+            width: 100%;             /* 아이템 너비 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            padding: 10px;           /* 패딩 */
+            text-align: ce;
+        }
+        /*input type이 text,password,button인 요소들에 적용*/
+        input[type="text"], input[type="password"], button{
+            width: 90%;             /* 입력창 너비 */
+            padding: 5px;           /* 패딩 */
+            margin: 5px;            /* 마진 */
+            box-sizing: border-box; /* 패딩, 보더 포함 너비 */
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form>
+            <!--구글 로그인 로고 -->
+            <div class="login-item">
+                <button type="button">
+                    <img src="./images/google.png" 
+                    alt="Goolgle 로그인" height="20px;" style="vertical-align: middle;">
+                    Login in with Google
+                </button>
+            </div>
+            <div>
+                <p>
+                    or
+                </p>
+            </div>
+            <!--아이디-->
+            <div class="login-item">
+                <label for="id">아이디</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <!--비밀번호-->
+            <div class="login-item">
+                <label for="pw">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <!--로그인 버튼-->
+            <div class="login-item">
+                <button type="submit">로그인</button>
+            </div>
+            <!--아이디/비밀번호 찾기-->
+            <div style="text-align: center;">
+                <a href="#">아이디/비밀번호 찾기</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

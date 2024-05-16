@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 sticky</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+        }
+        .green-box {
+            background-color: green;
+            position: sticky; /* 스크롤 하는 중에 일정 지점이 되면 fixed처럼 고정된다. */
+            /* left: 100px; /* left - 왼쪽으로부터 오른쪽으로 100px 이동 */
+            top: 0px; /* top - 위쪽으로부터 아래쪽으로 0ox 이동 */
+        }
+        .blue-box {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+    <h4>포지션 fixed</h4>
+    <p>
+        1. 포지션 fiexed는 지정된 위치에 고정된다. 브라우저를 작게 줄여서
+            스크롤이 생겨도 fixed된 요소는 화면에 고정되어 있다.
+    </p>
+</body>
+</html>

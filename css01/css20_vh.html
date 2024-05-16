@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size vh</title>
+    <style>
+        .parent{
+            font-size: 3vh; /*뷰포트 높이의 3%, ex) 뷰포트가 300 * 0.03 = 9px*/
+        }
+        .child{
+            font-size: 2vh; /*뷰포트 높이 2% ex) 뷰포트가 300 * 0.02 = 6px  */
+        }
+        .grandchild{
+            font-size: 1vh; /*뷰포트 높이 1% ex) 뷰포트가 300 * 0.01 = 3px  */
+        }
+    </style>
+</head>
+<body>
+    <h3>vh 단위는 뷰포트 높이의 1%로 PC,table,phone 크기에 유동임.</h3>
+    <div class="parent">
+        부모 요소입니다. 
+        <div class="child">
+            자식 요소입니다. 
+            <div class="grandchild">
+                손자 요소입니다.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
